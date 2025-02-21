@@ -18,8 +18,8 @@ const ContactForm = () => {
       .required('Required'),
     number: Yup.string()
       .matches(
-        /^[0-9]{3}-[0-9]{2}-[0-9]{2}$/,
-        'Number must match the format XXX-XX-XX'
+        /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/,
+        'Number must match the format XXX-XXX-XXXX'
       )
       .required('Required')
   });
